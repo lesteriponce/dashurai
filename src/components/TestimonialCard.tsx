@@ -66,21 +66,6 @@ export const TestimonialCard = (props: TestimonialCardProps) => {
             <h2 className="text-lg box-border caret-transparent leading-7 md:text-2xl md:leading-8">
               {props.statistic}
             </h2>
-            <a
-              href={props.caseStudyUrl}
-              className={`items-center self-auto box-border caret-transparent gap-x-3 flex shrink-0 justify-between leading-4 gap-y-3 w-fit pl-5 pr-1 py-1 rounded-[3.35544e+07px] md:self-end ${props.linkVariant}`}
-            >
-              <span className="box-border caret-transparent block">
-                {props.caseStudyText}
-              </span>
-              <span className="items-center aspect-square bg-[oklch(0.1489_0.0027_248.08)] box-border caret-transparent flex shrink-0 justify-center w-10 rounded-[3.35544e+07px]">
-                <img
-                  src="https://c.animaapp.com/mkh4hbwu1IS6us/assets/icon-4.svg"
-                  alt="Icon"
-                  className="box-border caret-transparent w-4"
-                />
-              </span>
-            </a>
           </div>
         </div>
         <figure className="text-sm box-border caret-transparent gap-x-1 flex flex-col leading-5 gap-y-1 pl-0 pt-5 border-l-0 border-t border-solid border-[oklch(0.8822_0_0)] md:pl-5 md:pt-0 md:border-t-0 md:border-l">

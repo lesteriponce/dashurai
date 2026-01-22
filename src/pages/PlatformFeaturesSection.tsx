@@ -2,7 +2,7 @@ import { FeatureAccordion } from "../components/FeatureAccordion";
 
 export const PlatformFeaturesSection = () => {
   return (
-    <div className="bg-[oklch(1_0_0)] box-border caret-transparent py-[72px] md:py-[120px]">
+    <div id="markets" className="bg-[oklch(1_0_0)] box-border caret-transparent py-[72px] md:py-[120px]">
       <section className="box-border caret-transparent max-w-none w-full mx-auto px-4 md:max-w-screen-xl">
         <header className="box-border caret-transparent text-center mb-12 md:mb-[72px]">
           <h1 className="text-3xl box-border caret-transparent leading-9 max-w-4xl mx-auto md:text-6xl md:leading-[60px]">

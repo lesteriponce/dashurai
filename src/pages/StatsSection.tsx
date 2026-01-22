@@ -3,7 +3,9 @@ export const StatsSection = () => {
     <section className="box-border caret-transparent max-w-6xl w-full mx-auto my-[72px] px-4 md:my-[120px]">
       <header className="box-border caret-transparent text-center mb-12 md:mb-[72px]">
         <h1 className="text-3xl box-border caret-transparent leading-9 max-w-4xl mx-auto md:text-6xl md:leading-[60px]">
-          Elevate your CX with AI agents proven to outperform humans
+          Your Vision,
+          <br />
+          Dashur AI's Innovation
         </h1>
       </header>
       <div className="box-border caret-transparent gap-x-5 flex flex-wrap justify-center gap-y-5">

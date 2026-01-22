@@ -6,7 +6,7 @@ export const FooterInfo = () => {
           Who we are
         </h2>
         <p className="text-xs box-border caret-transparent leading-4">
-          Ada is an AI customer experience company on a mission to make customer
+          Dashur AI is an AI customer experience company on a mission to make customer
           service extraordinary for everyone
         </p>
         <h2 className="text-[oklch(0.3956_0.0812_166.85)] self-end box-border caret-transparent">

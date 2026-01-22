@@ -2,7 +2,7 @@ import { HeroHeader } from "../components/HeroHeader";
 
 export const Hero = () => {
   return (
-    <div className="relative box-border caret-transparent isolate">
+    <div id="home" className="relative box-border caret-transparent isolate">
       <HeroHeader />
       <img
         src="/hero-bg.jpg"

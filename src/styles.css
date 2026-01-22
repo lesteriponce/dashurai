@@ -40,3 +40,96 @@
   transition: all 0.3s ease-in-out;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
+
+/* Dark mode styles */
+.dark {
+  background: linear-gradient(135deg, #0f172a 0%, #000000 100%);
+  color: #ffffff !important;
+}
+
+/* Universal text color for dark mode */
+.dark * {
+  color: #ffffff !important;
+}
+
+/* Background colors */
+.dark .bg-white {
+  background-color: #1e293b !important;
+}
+
+.dark .bg-\[oklch\(0\.9821_0_0\)\] {
+  background-color: #1e293b !important;
+}
+
+.dark .bg-\[oklch\(0\.25_0\.05_240\)\] {
+  background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%) !important;
+}
+
+.dark .bg-\[oklch\(0\.8346_0\.0735_257\.42\)\] {
+  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%) !important;
+}
+
+.dark .bg-\[oklch\(0\.1489_0\.0027_248\.08\)\] {
+  background-color: #0f172a !important;
+}
+
+.dark .bg-\[oklch\(0\.996_0\.009_274\)\] {
+  background-color: #334155 !important;
+}
+
+.dark .bg-\[oklch\(0\.985_0\.003_248\)\] {
+  background-color: #475569 !important;
+}
+
+.dark .bg-\[oklch\(0\.951_0\.011_248\)\] {
+  background-color: #64748b !important;
+}
+
+.dark .bg-\[oklch\(1_0_0\)\] {
+  background: linear-gradient(135deg, #1e40af 0%, #334155 50%, #475569 100%) !important;
+}
+
+/* Text colors */
+.dark .text-\[oklch\(0\.25_0\.05_240\)\] {
+  color: #e2e8f0 !important;
+}
+
+.dark .text-\[oklch\(0\.149_0\.014_248\)\] {
+  color: #cbd5e1 !important;
+}
+
+.dark .text-\[oklch\(0\.274_0\.046_248\)\] {
+  color: #94a3b8 !important;
+}
+
+.dark .text-\[oklch\(0\.417_0\.033_248\)\] {
+  color: #64748b !important;
+}
+
+/* Border colors */
+.dark .border-\[oklch\(0\.887_0\.006_248\)\] {
+  border-color: #475569 !important;
+}
+
+.dark .border-\[oklch\(0\.922_0\.011_248\)\] {
+  border-color: #64748b !important;
+}
+
+/* Hover states */
+.dark .hover\:bg-\[oklch\(0\.95_0_0\)\]:hover {
+  background-color: #334155 !important;
+}
+
+.dark .hover\:bg-\[oklch\(0\.9_0\.011_248\)\]:hover {
+  background-color: #475569 !important;
+}
+
+/* Image overlays */
+.dark img {
+  opacity: 0.8;
+}
+
+/* Smooth transitions for dark mode */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
+}

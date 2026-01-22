@@ -1,30 +1,14 @@
 export const CTASection = () => {
   return (
-    <div className="relative box-border caret-transparent isolate py-[72px] md:py-40">
+    <div id="careers" className="relative box-border caret-transparent isolate py-[72px] md:py-40">
       <div className="box-border caret-transparent max-w-none w-full mx-auto px-4 md:max-w-screen-xl">
         <header className="box-border caret-transparent text-center">
           <h1 className="text-3xl box-border caret-transparent leading-9 max-w-4xl mx-auto md:text-6xl md:leading-[60px]">
-            Let&#39;s talk - book a free consultation
+            
+            Welcome to Dashur AI , Consult with us
           </h1>
         </header>
-        <div className="box-border caret-transparent flex justify-center mt-10">
-          <a
-            href="/demo/"
-            className="items-center bg-[oklch(0.8346_0.0735_257.42)] box-border caret-transparent gap-x-3 flex shrink-0 justify-between leading-4 gap-y-3 w-fit pl-5 pr-1 py-1 rounded-[3.35544e+07px]"
-          >
-            <span className="box-border caret-transparent block">
-              See Ada in action
-            </span>
-            <span className="items-center aspect-square bg-[oklch(0.1489_0.0027_248.08)] box-border caret-transparent flex shrink-0 justify-center w-10 rounded-[3.35544e+07px]">
-              <img
-                src="https://c.animaapp.com/mkh4hbwu1IS6us/assets/icon-4.svg"
-                alt="Icon"
-                className="box-border caret-transparent w-4"
-              />
-            </span>
-          </a>
-        </div>
-      </div>
+              </div>
       <div className="[mask-image:linear-gradient(rgb(255,255,255),rgb(255,255,255)),radial-gradient(rgb(0,0,0)_0%,rgba(0,0,0,0)_80%),linear-gradient(rgb(255,255,255),rgb(255,255,255))] absolute box-border caret-transparent grid grid-cols-[repeat(1,minmax(0px,1fr))] grid-rows-[repeat(1,minmax(0px,1fr))] [mask-clip:border-box,border-box,border-box] [mask-composite:intersect,intersect,intersect] [mask-mode:match-source,match-source,match-source] [mask-origin:border-box,border-box,border-box] [mask-repeat:repeat,repeat,repeat] [mask-size:auto,auto,auto] -z-10 [mask-position:0%,0%,0%] inset-0">
         <img
           src="https://c.animaapp.com/mkh4hbwu1IS6us/assets/w=undefined.svg"

@@ -4,38 +4,40 @@ import { useState, useEffect } from "react";
 
 export const Header = () => {
   const [isVisible, setIsVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
-    let timeoutId: NodeJS.Timeout;
+    let timeoutId: number;
+    let lastKnownScrollY = 0;
+    let ticking = false;
     
-    const handleScroll = () => {
+    const updateHeader = () => {
       const currentScrollY = window.scrollY;
-      console.log('Scroll event detected - currentScrollY:', currentScrollY, 'lastScrollY:', lastScrollY);
+      const scrollThreshold = 5;
       
-      // Add threshold to prevent small scroll jitter
-      const scrollThreshold = 10;
-      
-      if (currentScrollY > lastScrollY + scrollThreshold) {
-        // Scrolling down - hide header after a small delay
-        console.log('Scrolling down - hiding header');
+      if (currentScrollY > lastKnownScrollY + scrollThreshold) {
+        // Scrolling down - hide header after delay
         clearTimeout(timeoutId);
         timeoutId = setTimeout(() => {
           setIsVisible(false);
-          console.log('Header hidden - isVisible set to false');
-        }, 150);
-      } else if (currentScrollY < lastScrollY - scrollThreshold) {
+        }, 100);
+      } else if (currentScrollY < lastKnownScrollY - scrollThreshold) {
         // Scrolling up - show header immediately
-        console.log('Scrolling up - showing header');
         clearTimeout(timeoutId);
         setIsVisible(true);
-        console.log('Header shown - isVisible set to true');
       }
       
-      setLastScrollY(currentScrollY);
+      lastKnownScrollY = currentScrollY;
+      ticking = false;
     };
 
-    window.addEventListener('scroll', handleScroll);
+    const handleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(updateHeader);
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
     
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -43,7 +45,7 @@ export const Header = () => {
         clearTimeout(timeoutId);
       }
     };
-  }, [lastScrollY]);
+  }, []);
 
   return (
     <header 
