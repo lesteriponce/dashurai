@@ -1,21 +1,85 @@
-# React + TypeScript + Vite
+# Dashurai AI - Advanced AI Solutions Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dashurai AI is a cutting-edge platform that delivers intelligent AI solutions to transform your business operations and drive innovation.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **AI Development**: Build intelligent solutions with machine learning models and neural networks
+- **AI Integration**: Seamlessly integrate AI capabilities into existing systems
+- **AI Consulting**: Strategic guidance for successful AI adoption
+- **Machine Learning**: Data-driven insights and predictive analytics
+- **Natural Language Processing**: Advanced NLP solutions for customer interactions
+- **Computer Vision**: Intelligent visual recognition and image analysis
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- **Frontend**: React 19.2.0 with TypeScript
+- **Build Tool**: Vite 7.2.4
+- **Styling**: TailwindCSS 4.1.18
+- **Routing**: React Router DOM 7.12.0
+- **State Management**: React Context API
+- **Development**: ESLint, TypeScript Compiler
 
-Note: This will impact Vite dev & build performances.
+## 📦 Installation
 
-## Expanding the ESLint configuration
+```bash
+# Install dependencies
+npm install
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Run linter
+npm run lint
+
+# Fix linting issues
+npm run lint:fix
+
+# Type checking
+npm run type-check
+
+# Preview production build
+npm run preview
+```
+
+## 🏗️ Project Structure
+
+```
+src/
+├── components/          # Reusable UI components
+│   ├── DashuraiServiceCards.tsx
+│   ├── DashuraiCTAButtons.tsx
+│   └── ...
+├── pages/              # Page components
+│   ├── DashuraiServicesSection.tsx
+│   ├── DashuraiFeaturesSection.tsx
+│   ├── DashuraiCTASection.tsx
+│   └── ...
+├── contexts/           # React contexts
+│   └── DarkModeContext.tsx
+├── hooks/              # Custom hooks
+│   └── useDarkMode.ts
+├── assets/             # Static assets
+└── styles.css          # Global styles
+```
+
+## 🎯 Development
+
+This project uses:
+
+- **React Compiler**: Enabled for optimized performance
+- **TypeScript**: For type safety and better developer experience
+- **ESLint**: For code quality and consistency
+- **TailwindCSS**: For utility-first styling
+
+## 🔧 Configuration
+
+### ESLint Configuration
+
+For production applications, consider enabling type-aware lint rules:
 
 ```js
 export default defineConfig([
@@ -23,29 +87,27 @@ export default defineConfig([
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
       tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
       tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
       tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
     ],
     languageOptions: {
       parserOptions: {
         project: ['./tsconfig.node.json', './tsconfig.app.json'],
         tsconfigRootDir: import.meta.dirname,
       },
-      // other options...
     },
   },
 ])
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### React-Specific Lint Rules
+
+Install additional plugins for React-specific linting:
+
+```bash
+npm install eslint-plugin-react-x eslint-plugin-react-dom
+```
 
 ```js
 // eslint.config.js
@@ -57,10 +119,7 @@ export default defineConfig([
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
-      // Other configs...
-      // Enable lint rules for React
       reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
       reactDom.configs.recommended,
     ],
     languageOptions: {
@@ -68,8 +127,23 @@ export default defineConfig([
         project: ['./tsconfig.node.json', './tsconfig.app.json'],
         tsconfigRootDir: import.meta.dirname,
       },
-      // other options...
     },
   },
 ])
 ```
+
+## 🌟 Getting Started
+
+1. Clone the repository
+2. Install dependencies with `npm install`
+3. Start the development server with `npm run dev`
+4. Open your browser to the local development URL
+5. Start building your AI-powered features!
+
+## 📄 License
+
+This project is private and proprietary to Dashurai AI.
+
+## 🤝 Support
+
+For support and inquiries, please contact the Dashurai AI team.

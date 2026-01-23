@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useState, useEffect } from 'react';
 import type { ReactNode } from 'react';
 
 interface DarkModeContextType {
@@ -8,34 +8,22 @@ interface DarkModeContextType {
 
 const DarkModeContext = createContext<DarkModeContextType | undefined>(undefined);
 
-export const useDarkMode = () => {
-  const context = useContext(DarkModeContext);
-  if (context === undefined) {
-    throw new Error('useDarkMode must be used within a DarkModeProvider');
-  }
-  return context;
-};
-
 interface DarkModeProviderProps {
   children: ReactNode;
 }
 
 export const DarkModeProvider: React.FC<DarkModeProviderProps> = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    // Check localStorage for saved preference
     const savedMode = localStorage.getItem('darkMode');
     if (savedMode !== null) {
       return savedMode === 'true';
     }
-    // Check system preference
     return window.matchMedia('(prefers-color-scheme: dark)').matches;
   });
 
   useEffect(() => {
-    // Update localStorage when mode changes
     localStorage.setItem('darkMode', isDarkMode.toString());
     
-    // Update document class for CSS targeting
     if (isDarkMode) {
       document.documentElement.classList.add('dark');
     } else {
@@ -53,3 +41,5 @@ export const DarkModeProvider: React.FC<DarkModeProviderProps> = ({ children }) 
     </DarkModeContext.Provider>
   );
 };
+
+export { DarkModeContext };

@@ -16,11 +16,11 @@ const cardData: CardData[] = [
   {
     title: "UI/UX Design",
     description:
-      "Unlock the power of exceptional user experiences with our UI/UX design service. We ensure your product stands out and delights users",
+      "Unlock the power of exceptional user experiences with our UI/UX design service. We ensure your product stands out and delights users.",
     imageUrl: "https://c.animaapp.com/mkh4hbwu1IS6us/assets/w=undefined-1.png",
   },
   {
-    title: "App Development",
+    title: "APP DEVELOPMENT",
     description:
       "Transform your ideas into exceptional mobile experiences with our cutting-edge app development services.",
     imageUrl: "https://c.animaapp.com/mkh4hbwu1IS6us/assets/w=undefined-2.png",
@@ -45,7 +45,7 @@ const cardData: CardData[] = [
   },
 ];
 
-export const ACXCards = () => {
+export const DashuraiServiceCards = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (

@@ -4,6 +4,7 @@ import { Header } from "./pages/Header";
 import { Main } from "./components/Main";
 import { Footer } from "./pages/Footer";
 import { ContactPage } from "./pages/ContactPage";
+import { MarketsPage } from "./pages/MarketsPage";
 import { DarkModeProvider } from "./contexts/DarkModeContext";
 
 export const App = () => {
@@ -23,6 +24,7 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/markets" element={<MarketsPage />} />
         </Routes>
         <Footer />
       </DarkModeProvider>

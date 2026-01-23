@@ -1,5 +1,5 @@
 import { NavItem } from "./NavItem";
-import { CTAButtons } from "./CTAButtons";
+import { DashuraiCTAButtons } from "./DashuraiCTAButtons";
 
 export const DesktopMenu = () => {
   return (
@@ -7,7 +7,7 @@ export const DesktopMenu = () => {
       <NavItem
         label="Home"
         hasDropdown={false}
-        href="#home"
+        href="/"
       />
       <NavItem
         label="About"
@@ -22,14 +22,14 @@ export const DesktopMenu = () => {
       <NavItem
         label="Markets"
         hasDropdown={false}
-        href="#the-markets"
+        href="/markets"
       />
       <NavItem
         label="Careers"
         hasDropdown={false}
         href="#careers"
       />
-      <CTAButtons />
+      <DashuraiCTAButtons />
     </ul>
   );
 };

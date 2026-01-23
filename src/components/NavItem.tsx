@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export type NavItemProps = {
   label: string;
   href?: string;
@@ -23,12 +25,12 @@ export const NavItem = (props: NavItemProps) => {
   if (!props.hasDropdown) {
     return (
       <li className="box-border caret-transparent min-h-0 min-w-0 rounded-[32px] md:min-h-[auto] md:min-w-[auto]">
-        <a
-          href={props.href}
+        <Link
+          to={props.href || '#'}
           className="text-white items-center bg-[oklch(0.25_0.05_240)] box-border caret-transparent gap-x-2 flex h-12 leading-[20.625px] gap-y-2 w-full px-5 rounded-none md:rounded-[3.35544e+07px]"
         >
           {props.label}
-        </a>
+        </Link>
       </li>
     );
   }

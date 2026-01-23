@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
-import { useDarkMode } from '../contexts/DarkModeContext';
+import { useDarkMode } from '../hooks/useDarkMode';
 
-export const CTAButtons = () => {
+export const DashuraiCTAButtons = () => {
   const { isDarkMode, toggleDarkMode } = useDarkMode();
   const navigate = useNavigate();
 

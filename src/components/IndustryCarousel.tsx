@@ -9,10 +9,10 @@ export const IndustryCarousel = () => {
             className="relative box-border caret-transparent block shrink-0 h-full w-[343px] md:w-[720px]"
           >
             <video
-              playsinline=""
+              playsInline
               preload="auto"
               poster="https://c.animaapp.com/mkh4hbwu1IS6us/assets/home-industry-finserve.webp"
-              muted=""
+              muted={true}
               className="box-border caret-transparent max-w-full"
             >
               <source
@@ -43,10 +43,10 @@ export const IndustryCarousel = () => {
             className="relative box-border caret-transparent block shrink-0 h-full w-[343px] md:w-[720px]"
           >
             <video
-              playsinline=""
+              playsInline
               preload="auto"
               poster="https://c.animaapp.com/mkh4hbwu1IS6us/assets/home-industry-gaming.webp"
-              muted=""
+              muted={true}
               className="box-border caret-transparent max-w-full"
             >
               <source
@@ -77,10 +77,10 @@ export const IndustryCarousel = () => {
             className="relative box-border caret-transparent block shrink-0 h-full w-[343px] md:w-[720px]"
           >
             <video
-              playsinline=""
+              playsInline
               preload="auto"
               poster="https://c.animaapp.com/mkh4hbwu1IS6us/assets/home-industry-retail.webp"
-              muted=""
+              muted={true}
               className="box-border caret-transparent max-w-full"
             >
               <source
@@ -111,10 +111,10 @@ export const IndustryCarousel = () => {
             className="relative box-border caret-transparent block shrink-0 h-full w-[343px] md:w-[720px]"
           >
             <video
-              playsinline=""
+              playsInline
               preload="auto"
               poster="https://c.animaapp.com/mkh4hbwu1IS6us/assets/home-industry-saas.webp"
-              muted=""
+              muted={true}
               className="box-border caret-transparent max-w-full"
             >
               <source
@@ -145,10 +145,10 @@ export const IndustryCarousel = () => {
             className="relative box-border caret-transparent block shrink-0 h-full w-[343px] md:w-[720px]"
           >
             <video
-              playsinline=""
+              playsInline
               preload="auto"
               poster="https://c.animaapp.com/mkh4hbwu1IS6us/assets/home-industry-travel.webp"
-              muted=""
+              muted={true}
               className="box-border caret-transparent max-w-full"
             >
               <source

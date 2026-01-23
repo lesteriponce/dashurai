@@ -1,13 +1,15 @@
 import { FeatureAccordion } from "../components/FeatureAccordion";
 
-export const PlatformFeaturesSection = () => {
+export const DashuraiFeaturesSection = () => {
   return (
     <div id="markets" className="bg-[oklch(1_0_0)] box-border caret-transparent py-[72px] md:py-[120px]">
       <section className="box-border caret-transparent max-w-none w-full mx-auto px-4 md:max-w-screen-xl">
         <header className="box-border caret-transparent text-center mb-12 md:mb-[72px]">
           <h1 className="text-3xl box-border caret-transparent leading-9 max-w-4xl mx-auto md:text-6xl md:leading-[60px]">
-            Power personalized AI experiences at scale with Ada’s ACX Platform
+            Dashurai AI Platform Features
           </h1>
+           <p className="text-lg box-border caret-transparent leading-7 max-w-[547.197px] mt-8 mx-auto md:mt-10">Ready to transform your business with cutting-edge AI solutions? Get in touch and let's bring your vision to life with innovative technology and exceptional design.</p>
+          
         </header>
         <div className="bg-[oklch(0.9821_0_0)] box-border caret-transparent gap-x-5 grid grid-cols-[repeat(1,minmax(0px,1fr))] max-w-screen-lg gap-y-5 mx-auto p-5 md:grid-cols-[repeat(3,minmax(0px,1fr))]">
           <FeatureAccordion />

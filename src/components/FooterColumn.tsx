@@ -8,23 +8,28 @@ export type FooterColumnProps = {
 
 export const FooterColumn = (props: FooterColumnProps) => {
   return (
-    <ul className="box-border caret-transparent gap-x-1 flex flex-col list-none gap-y-1 pl-0">
-      <li className="text-[oklch(0.3956_0.0812_166.85)] text-base box-border caret-transparent leading-6">
+    <div className="space-y-4">
+      <h3 className="text-lg font-semibold text-white">
         {props.title}
-      </li>
-      {props.links.map((link, index) => (
-        <li key={index} className="box-border caret-transparent">
-          {link.href ? (
-            <a href={link.href} className="box-border caret-transparent">
-              {link.text}
-            </a>
-          ) : (
-            <span className="box-border caret-transparent">
-              {link.text}
-            </span>
-          )}
-        </li>
-      ))}
-    </ul>
+      </h3>
+      <ul className="space-y-2">
+        {props.links.map((link, index) => (
+          <li key={index}>
+            {link.href ? (
+              <a 
+                href={link.href} 
+                className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
+              >
+                {link.text}
+              </a>
+            ) : (
+              <span className="text-gray-300 text-sm">
+                {link.text}
+              </span>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };

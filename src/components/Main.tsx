@@ -1,13 +1,10 @@
 import { Hero } from "../pages/Hero";
 import { LogoCarousel } from "../pages/LogoCarousel";
 import { StatsSection } from "../pages/StatsSection";
-import { ACXSection } from "../pages/ACXSection";
-import { IndustrySection } from "../pages/IndustrySection";
-import { TestimonialsSection } from "../pages/TestimonialsSection";
-import { PlatformFeaturesSection } from "../pages/PlatformFeaturesSection";
-import { SecuritySection } from "../pages/SecuritySection";
+import { DashuraiServicesSection } from "../pages/DashuraiServicesSection";
+import { DashuraiFeaturesSection } from "../pages/DashuraiFeaturesSection";
 import { BlogSection } from "../pages/BlogSection";
-import { CTASection } from "../pages/CTASection";
+import { DashuraiCTASection } from "../pages/DashuraiCTASection";
 
 export const Main = () => {
   return (
@@ -15,13 +12,10 @@ export const Main = () => {
       <Hero />
       <LogoCarousel />
       <StatsSection />
-      <ACXSection />
-      <IndustrySection />
-      <TestimonialsSection />
-      <PlatformFeaturesSection />
-      <SecuritySection />
+      <DashuraiServicesSection />
+      <DashuraiFeaturesSection />
       <BlogSection />
-      <CTASection />
+      <DashuraiCTASection />
     </main>
   );
 };

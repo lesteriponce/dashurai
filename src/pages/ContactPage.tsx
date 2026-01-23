@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useDarkMode } from '../contexts/DarkModeContext';
+import { useDarkMode } from '../hooks/useDarkMode';
 
 export const ContactPage = () => {
   const { isDarkMode } = useDarkMode();

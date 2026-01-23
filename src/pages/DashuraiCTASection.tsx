@@ -1,11 +1,12 @@
-export const CTASection = () => {
+export const DashuraiCTASection = () => {
   return (
     <div id="careers" className="relative box-border caret-transparent isolate py-[72px] md:py-40">
       <div className="box-border caret-transparent max-w-none w-full mx-auto px-4 md:max-w-screen-xl">
         <header className="box-border caret-transparent text-center">
           <h1 className="text-3xl box-border caret-transparent leading-9 max-w-4xl mx-auto md:text-6xl md:leading-[60px]">
             
-            Welcome to Dashur AI , Consult with us
+            Dashurai AI - Embrace Innovation,
+Master Tomorrow
           </h1>
         </header>
               </div>
