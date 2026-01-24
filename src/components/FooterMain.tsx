@@ -46,7 +46,7 @@ export const FooterMain = () => {
         <FooterColumn
           title="Company"
           links={[
-            { text: "About Us", href: "#about" },
+            { text: "About Us", href: "/about" },
             { text: "Careers", href: "#careers" },
             { text: "Partners", href: "#partners" },
             { text: "Press", href: "#press" },

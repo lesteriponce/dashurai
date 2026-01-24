@@ -12,7 +12,7 @@ export const DesktopMenu = () => {
       <NavItem
         label="About"
         hasDropdown={false}
-        href="#about"
+        href="/about"
       />
       <NavItem
         label="Capabilities"

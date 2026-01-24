@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export type FooterColumnProps = {
   title: string;
   links: Array<{
@@ -16,12 +18,21 @@ export const FooterColumn = (props: FooterColumnProps) => {
         {props.links.map((link, index) => (
           <li key={index}>
             {link.href ? (
-              <a 
-                href={link.href} 
-                className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
-              >
-                {link.text}
-              </a>
+              link.href.startsWith('/') ? (
+                <Link 
+                  to={link.href} 
+                  className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
+                >
+                  {link.text}
+                </Link>
+              ) : (
+                <a 
+                  href={link.href} 
+                  className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
+                >
+                  {link.text}
+                </a>
+              )
             ) : (
               <span className="text-gray-300 text-sm">
                 {link.text}
