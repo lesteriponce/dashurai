@@ -47,7 +47,7 @@ export const FooterMain = () => {
           title="Company"
           links={[
             { text: "About Us", href: "/about" },
-            { text: "Careers", href: "#careers" },
+            { text: "Careers", href: "/careers" },
             { text: "Partners", href: "#partners" },
             { text: "Press", href: "#press" },
             { text: "Investors", href: "#investors" },

@@ -27,7 +27,7 @@ export const DesktopMenu = () => {
       <NavItem
         label="Careers"
         hasDropdown={false}
-        href="#careers"
+        href="/careers"
       />
       <DashuraiCTAButtons />
     </ul>

@@ -6,6 +6,7 @@ import { Footer } from "./pages/Footer";
 import { ContactPage } from "./pages/ContactPage";
 import { MarketsPage } from "./pages/MarketsPage";
 import { AboutPage } from "./pages/AboutPage";
+import { CareersPage } from "./pages/CareersPage";
 import { DarkModeProvider } from "./contexts/DarkModeContext";
 import { useScrollToTop } from "./hooks/useScrollToTop";
 
@@ -34,6 +35,7 @@ export const App = () => {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/markets" element={<MarketsPage />} />
+            <Route path="/careers" element={<CareersPage />} />
           </Routes>
           <Footer />
         </ScrollToTopWrapper>

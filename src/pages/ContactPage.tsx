@@ -53,7 +53,7 @@ export const ContactPage = () => {
                 onChange={handleChange}
                 required
                 className={`w-full px-4 py-2 rounded-lg border ${isDarkMode ? 'bg-gray-700 border-gray-600 text-white' : 'bg-white border-gray-300'} focus:outline-none focus:ring-2 focus:ring-blue-500`}
-                placeholder="John Doe"
+                placeholder="Lester Ponce"
               />
             </div>
             
@@ -69,7 +69,7 @@ export const ContactPage = () => {
                 onChange={handleChange}
                 required
                 className={`w-full px-4 py-2 rounded-lg border ${isDarkMode ? 'bg-gray-700 border-gray-600 text-white' : 'bg-white border-gray-300'} focus:outline-none focus:ring-2 focus:ring-blue-500`}
-                placeholder="john@example.com"
+                placeholder="lester@example.com"
               />
             </div>
             
@@ -99,7 +99,7 @@ export const ContactPage = () => {
                 value={formData.company}
                 onChange={handleChange}
                 className={`w-full px-4 py-2 rounded-lg border ${isDarkMode ? 'bg-gray-700 border-gray-600 text-white' : 'bg-white border-gray-300'} focus:outline-none focus:ring-2 focus:ring-blue-500`}
-                placeholder="Acme Corporation"
+                placeholder="i LegalCompany"
               />
             </div>
           </div>
