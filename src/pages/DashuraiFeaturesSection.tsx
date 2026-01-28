@@ -1,79 +1,44 @@
-import { FeatureAccordion } from "../components/FeatureAccordion";
-
 export const DashuraiFeaturesSection = () => {
+  const items = [
+    "Frontend Development",
+    "Backend Development",
+    "Mobile Development",
+    "Cloud Solutions",
+    "AI & Machine Learning",
+    "DevOps",
+  ];
+
   return (
-    <div id="markets" className="bg-[oklch(1_0_0)] box-border caret-transparent py-[72px] md:py-[120px]">
+    <div id="markets" className="bg-gradient-to-bl from-slate-950 via-blue-900/30 to-slate-950 box-border caret-transparent py-[72px] md:py-[120px]">
       <section className="box-border caret-transparent max-w-none w-full mx-auto px-4 md:max-w-screen-xl">
         <header className="box-border caret-transparent text-center mb-12 md:mb-[72px]">
           <h1 className="text-3xl box-border caret-transparent leading-9 max-w-4xl mx-auto md:text-6xl md:leading-[60px]">
-            Dashurai AI Platform Features
+            Embrace Innovation,Master Tomorrow
           </h1>
-           <p className="text-lg box-border caret-transparent leading-7 max-w-[547.197px] mt-8 mx-auto md:mt-10">Ready to transform your business with cutting-edge AI solutions? Get in touch and let's bring your vision to life with innovative technology and exceptional design.</p>
-          
+          <p className="text-lg box-border caret-transparent leading-7 max-w-[547.197px] mt-8 mx-auto md:mt-10">Ready to transform your business with cutting-edge AI solutions? Get in touch and let's bring your vision to life with innovative technology and exceptional design.</p>
         </header>
-        <div className="bg-[oklch(0.9821_0_0)] box-border caret-transparent gap-x-5 grid grid-cols-[repeat(1,minmax(0px,1fr))] max-w-screen-lg gap-y-5 mx-auto p-5 md:grid-cols-[repeat(3,minmax(0px,1fr))]">
-          <FeatureAccordion />
-          <div className="bg-[oklch(0.9821_0_0)] box-border caret-transparent grid col-end-auto col-start-auto -order-last md:col-end-[span_2] md:col-start-[span_2] md:order-none">
-            <div className="relative items-center box-border caret-transparent flex col-start-1 row-start-1 isolate justify-center overflow-hidden">
-              <div className="items-center aspect-[4_/_3] box-border caret-transparent flex h-full justify-center w-full p-5 md:p-10">
-                <img
-                  src="https://c.animaapp.com/mkh4hbwu1IS6us/assets/w=800.png"
-                  alt=""
-                  className="aspect-[auto_800_/_1041] box-border caret-transparent max-h-full max-w-full"
-                />
+
+        <div className="flex justify-center">
+          <div className="h-[320px] w-full max-w-[720px] rounded bg-[#0f172a] flex gap-[5px] p-[0.4em] md:h-[360px] lg:h-[420px]">
+            {items.map((label, idx) => (
+              <div
+                key={label}
+                className="group h-full flex-1 overflow-hidden cursor-pointer rounded-[2px] transition-all duration-500 hover:flex-[4]"
+              >
+                <div className="h-full w-full rounded-[2px] bg-gradient-to-b from-[#0b1a4a] via-[#0f2a73] to-[#143b9a] p-[1px]">
+                  <div className="h-full w-full rounded-[2px] bg-[#0f172a] flex items-center justify-center">
+                    <div className="relative w-full px-3 flex items-center justify-center">
+                      <span className="absolute inset-0 flex items-center justify-center text-center transition-all duration-300 text-gray-500 text-8xl sm:text-9xl md:text-[10rem] lg:text-[12rem] font-bold opacity-40 scale-100 group-hover:opacity-0 group-hover:scale-95 blur-[2px]" style={{ WebkitTextStroke: '2px #6b7280', WebkitTextFillColor: 'transparent' }}>
+                        {idx + 1}
+                      </span>
+                      <span className="text-center transition-all duration-300 uppercase text-[#ff568e] tracking-[0.1em] text-xs sm:text-sm md:text-base whitespace-nowrap opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100">
+                        {label}
+                      </span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <img
-                src="https://c.animaapp.com/mkh4hbwu1IS6us/assets/w=800,h=600.jpg"
-                alt=""
-                sizes="(width >= 80rem) 649px, (width >= 64rem) 628px, (width >= 48rem) 457px, (width >= 40rem) 568px, calc(100vw-72px)"
-                className="absolute aspect-[auto_800_/_600] box-border caret-transparent h-full max-w-full object-cover w-full -z-10"
-              />
-            </div>
-            <div className="relative items-center box-border caret-transparent flex col-start-1 row-start-1 isolate justify-center overflow-hidden">
-              <div className="items-center aspect-[4_/_3] box-border caret-transparent hidden h-full justify-center w-full p-5 md:p-10">
-                <img
-                  src="https://c.animaapp.com/mkh4hbwu1IS6us/assets/w=800-1.png"
-                  alt=""
-                  className="aspect-[auto_800_/_1328] box-border caret-transparent max-h-full max-w-full"
-                />
-              </div>
-              <img
-                src="https://c.animaapp.com/mkh4hbwu1IS6us/assets/w=800,h=600-1.jpg"
-                alt=""
-                sizes="(width >= 80rem) 649px, (width >= 64rem) 628px, (width >= 48rem) 457px, (width >= 40rem) 568px, calc(100vw-72px)"
-                className="absolute aspect-[auto_800_/_600] box-border caret-transparent hidden h-full max-w-full object-cover w-full -z-10"
-              />
-            </div>
-            <div className="relative items-center box-border caret-transparent flex col-start-1 row-start-1 isolate justify-center overflow-hidden">
-              <div className="items-center aspect-[4_/_3] box-border caret-transparent hidden h-full justify-center w-full p-5 md:p-10">
-                <img
-                  src="https://c.animaapp.com/mkh4hbwu1IS6us/assets/w=800-2.png"
-                  alt=""
-                  className="aspect-[auto_800_/_523] box-border caret-transparent max-h-full max-w-full"
-                />
-              </div>
-              <img
-                src="https://c.animaapp.com/mkh4hbwu1IS6us/assets/w=800,h=600-2.jpg"
-                alt=""
-                sizes="(width >= 80rem) 649px, (width >= 64rem) 628px, (width >= 48rem) 457px, (width >= 40rem) 568px, calc(100vw-72px)"
-                className="absolute aspect-[auto_800_/_600] box-border caret-transparent hidden h-full max-w-full object-cover w-full -z-10"
-              />
-            </div>
-            <div className="relative items-center box-border caret-transparent flex col-start-1 row-start-1 isolate justify-center overflow-hidden">
-              <div className="items-center aspect-[4_/_3] box-border caret-transparent hidden h-full justify-center w-full p-5 md:p-10">
-                <img
-                  src="https://c.animaapp.com/mkh4hbwu1IS6us/assets/w=800-3.png"
-                  alt=""
-                  className="aspect-[auto_800_/_1117] box-border caret-transparent max-h-full max-w-full"
-                />
-              </div>
-              <img
-                src="https://c.animaapp.com/mkh4hbwu1IS6us/assets/w=800,h=600.png"
-                alt=""
-                sizes="(width >= 80rem) 649px, (width >= 64rem) 628px, (width >= 48rem) 457px, (width >= 40rem) 568px, calc(100vw-72px)"
-                className="absolute aspect-[auto_800_/_600] box-border caret-transparent hidden h-full max-w-full object-cover w-full -z-10"
-              />
-            </div>
+            ))}
           </div>
         </div>
       </section>

@@ -6,12 +6,12 @@ export const FooterNav = () => {
       <FooterColumn
         title="Quick Links"
         links={[
-          { text: "Home" },
-          { text: "Capabilities" },
-          { text: "Careers" },
-          { text: "About" },
-          { text: "Markets" },
-          { text: "Contact" },
+          { text: "Home", href: "/" },
+          { text: "Capabilities", href: "/capabilities" },
+          { text: "Careers", href: "/careers" },
+          { text: "About", href: "/about" },
+          { text: "Markets", href: "/markets" },
+          { text: "Contact", href: "/contact" },
         ]}
       />
     </nav>

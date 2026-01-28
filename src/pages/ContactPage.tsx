@@ -32,7 +32,7 @@ export const ContactPage = () => {
   };
 
   return (
-    <div className={`min-h-screen py-20 px-4 ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
+    <div className={`min-h-screen py-20 px-4 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
       <div className="max-w-2xl mx-auto">
         <h1 className="text-4xl font-bold text-center mb-8">Contact Us</h1>
         <p className="text-center mb-12 text-lg">

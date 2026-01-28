@@ -10,7 +10,7 @@ export type TestimonialCardProps = {
   caseStudyText: string;
   linkVariant: string;
   quote: string;
-  authorImageUrl: string;
+  authorImageUrl?: string;
   authorImageAlt: string;
   authorImageVariant: string;
   authorName: string;
@@ -45,7 +45,7 @@ export const TestimonialCard = (props: TestimonialCardProps) => {
   return (
     <div
       ref={cardRef}
-      className={`static bg-[oklch(1_0_0)] box-border caret-transparent grid grid-cols-[repeat(1,minmax(0px,1fr))] overflow-hidden rounded-lg border-t-[16px] border-solid top-auto transition-all duration-300 md:sticky md:grid-cols-[repeat(3,minmax(0px,1fr))] md:top-36 ${props.variant} ${
+      className={`static bg-gradient-to-br from-blue-950/85 to-black/95 box-border caret-transparent grid grid-cols-[repeat(1,minmax(0px,1fr))] overflow-hidden rounded-lg border-t-[16px] border-solid top-auto transition-all duration-300 md:sticky md:grid-cols-[repeat(3,minmax(0px,1fr))] md:top-36 ${props.variant} ${
         isSticky ? "shadow-2xl scale-[0.98]" : ""
       }`}
     >
@@ -73,16 +73,18 @@ export const TestimonialCard = (props: TestimonialCardProps) => {
             {props.quote}
           </blockquote>
           <figcaption className="box-border caret-transparent gap-x-4 flex min-h-[auto] min-w-[auto] gap-y-4 md:contents md:min-h-0 md:min-w-0">
-            <div
-              className={`box-border caret-transparent max-w-20 -order-last overflow-hidden mt-2 mb-0 rounded-lg md:max-w-36 md:mt-0 md:mb-6 ${props.authorImageVariant}`}
-            >
-              <img
-                src={props.authorImageUrl}
-                alt={props.authorImageAlt}
-                sizes="(width >= 80rem) 144px, 80px"
-                className="aspect-[auto_144_/_144] box-border caret-transparent max-w-full w-36"
-              />
-            </div>
+            {props.authorImageUrl && (
+              <div
+                className={`box-border caret-transparent max-w-20 -order-last overflow-hidden mt-2 mb-0 rounded-lg md:max-w-36 md:mt-0 md:mb-6 ${props.authorImageVariant}`}
+              >
+                <img
+                  src={props.authorImageUrl}
+                  alt={props.authorImageAlt}
+                  sizes="(width >= 80rem) 144px, 80px"
+                  className="aspect-[auto_144_/_144] box-border caret-transparent max-w-full w-36"
+                />
+              </div>
+            )}
             <div className="box-border caret-transparent mt-0 pt-0 border-t-0 border-solid border-[oklch(0.8822_0_0)] md:mt-5 md:pt-5 md:border-t">
               <div className="box-border caret-transparent">
                 {props.authorName}

@@ -4,7 +4,7 @@ import { IndustryStats } from "../components/IndustryStats";
 
 export const IndustrySection = () => {
   return (
-    <div id="capabilities" className="text-[oklch(0.9821_0_0)] bg-[oklch(0.3125_0.0278_328.73)] box-border caret-transparent mb-[72px] py-[72px] md:mb-[120px] md:py-[120px]">
+    <div id="capabilities" className="text-[oklch(0.9821_0_0)] bg-gradient-to-r from-zinc-900 via-slate-800 to-zinc-900 box-border caret-transparent mb-[72px] py-[72px] md:mb-[120px] md:py-[120px]">
       <section className="box-border caret-transparent max-w-none w-full mx-auto px-4 md:max-w-screen-xl">
         <header className="box-border caret-transparent text-center mb-12 md:mb-[72px]">
           <h1 className="text-3xl box-border caret-transparent leading-9 max-w-4xl mx-auto md:text-6xl md:leading-[60px]">

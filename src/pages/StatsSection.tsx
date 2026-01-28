@@ -7,31 +7,34 @@ export const StatsSection = () => {
           <br />
           Dashur AI's Innovation
         </h1>
+        <p className="text-9x1 box-border caret-transparent leading-7 max-w-md mx-auto">
+          Building cutting-edge software solutions that transform businesses. We deliver scalable, efficient, and innovative applications tailored to your needs.
+        </p>
       </header>
       <div className="box-border caret-transparent gap-x-5 flex flex-wrap justify-center gap-y-5">
-        <div className="aspect-square bg-[oklch(1_0_0)] box-border caret-transparent gap-x-8 flex flex-col justify-between max-w-[calc(50%_-_10px)] gap-y-8 w-full p-4 rounded-lg border-l-8 border-solid border-[oklch(0.3956_0.0812_166.85)] md:max-w-[calc(25%_-_15px)] md:p-8 md:border-l-[16px]">
+        <div className="aspect-square bg-gradient-to-br from-blue-950/85 to-black/95 box-border caret-transparent gap-x-8 flex flex-col justify-between max-w-[calc(50%_-_10px)] gap-y-8 w-full p-4 rounded-lg border-l-8 border-solid border-blue-900 md:max-w-[calc(25%_-_15px)] md:p-8 md:border-l-[16px]">
           <div className="text-3xl box-border caret-transparent leading-9 md:text-5xl md:leading-[48px]">
-            8X
+            10X
           </div>
           <div className="text-sm box-border caret-transparent leading-5 md:text-xl md:leading-7">
-            more productive than human agents
+            more productive
           </div>
         </div>
-        <div className="aspect-square bg-[oklch(1_0_0)] box-border caret-transparent gap-x-8 flex flex-col justify-between max-w-[calc(50%_-_10px)] gap-y-8 w-full p-4 rounded-lg border-l-8 border-solid border-[oklch(0.8747_0.114_327.97)] md:max-w-[calc(25%_-_15px)] md:p-8 md:border-l-[16px]"></div>
-        <div className="aspect-square bg-[oklch(1_0_0)] box-border caret-transparent gap-x-8 flex flex-col justify-between max-w-[calc(50%_-_10px)] gap-y-8 w-full p-4 rounded-lg border-l-8 border-solid border-[oklch(0.8346_0.0735_257.42)] md:max-w-[calc(25%_-_15px)] md:p-8 md:border-l-[16px]">
+        <div className="aspect-square bg-gradient-to-br from-blue-950/85 to-black/95 box-border caret-transparent gap-x-8 flex flex-col justify-between max-w-[calc(50%_-_10px)] gap-y-8 w-full p-4 rounded-lg border-l-8 border-solid border-blue-900 md:max-w-[calc(25%_-_15px)] md:p-8 md:border-l-[16px]"></div>
+        <div className="aspect-square bg-gradient-to-br from-blue-950/85 to-black/95 box-border caret-transparent gap-x-8 flex flex-col justify-between max-w-[calc(50%_-_10px)] gap-y-8 w-full p-4 rounded-lg border-l-8 border-solid border-blue-900 md:max-w-[calc(25%_-_15px)] md:p-8 md:border-l-[16px]">
           <div className="text-3xl box-border caret-transparent leading-9 md:text-5xl md:leading-[48px]">
-            357%
+            420%
           </div>
           <div className="text-sm box-border caret-transparent leading-5 md:text-xl md:leading-7">
             ROI on AI investment
           </div>
         </div>
-        <div className="aspect-square bg-[oklch(1_0_0)] box-border caret-transparent gap-x-8 flex flex-col justify-between max-w-[calc(50%_-_10px)] gap-y-8 w-full p-4 rounded-lg border-l-8 border-solid border-[oklch(0.9275_0.1157_97.52)] md:max-w-[calc(25%_-_15px)] md:p-8 md:border-l-[16px]">
+        <div className="aspect-square bg-gradient-to-br from-blue-950/85 to-black/95 box-border caret-transparent gap-x-8 flex flex-col justify-between max-w-[calc(50%_-_10px)] gap-y-8 w-full p-4 rounded-lg border-l-8 border-solid border-blue-900 md:max-w-[calc(25%_-_15px)] md:p-8 md:border-l-[16px]">
           <div className="text-3xl box-border caret-transparent leading-9 md:text-5xl md:leading-[48px]">
-            84%
+            95%
           </div>
           <div className="text-sm box-border caret-transparent leading-5 md:text-xl md:leading-7">
-            automated resolution rate
+            resolution rate
           </div>
         </div>
       </div>

@@ -7,16 +7,7 @@ export const DashuraiCTAButtons = () => {
 
   return (
     <li className="box-border caret-transparent gap-x-1 flex min-h-0 min-w-0 gap-y-1 ml-0 mt-6 md:min-h-[auto] md:min-w-[auto] md:ml-auto md:mt-0">
-      <div
-        className="items-center aspect-square bg-[oklch(0.9821_0_0)] box-border caret-transparent hidden justify-center min-h-0 min-w-0 w-12 rounded-[3.35544e+07px] md:flex md:min-h-[auto] md:min-w-[auto]"
-      >
-        <img
-          src="https://c.animaapp.com/mkh4hbwu1IS6us/assets/icon-3.svg"
-          alt="Icon"
-          className="box-border caret-transparent w-6"
-        />
-      </div>
-      <button
+            <button
         onClick={toggleDarkMode}
         className="items-center aspect-square bg-[oklch(0.9821_0_0)] box-border caret-transparent flex justify-center min-h-0 min-w-0 w-12 rounded-[3.35544e+07px] md:min-h-[auto] md:min-w-[auto] transition-colors duration-200 hover:bg-[oklch(0.95_0_0)]"
         aria-label="Toggle dark mode"

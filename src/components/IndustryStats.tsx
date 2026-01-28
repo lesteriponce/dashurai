@@ -7,7 +7,7 @@ export const IndustryStats = () => {
             <div
               role="group"
               aria-label="1 / 5"
-              className="relative bg-[oklch(1_0_0)] box-border caret-transparent flex flex-col shrink-0 h-full justify-between w-[343px] mr-5 p-8 rounded-lg border-l-[16px] border-solid border-[oklch(0.3956_0.0812_166.85)] md:w-[297px]"
+              className="relative bg-gradient-to-br from-blue-950/85 to-black/95 box-border caret-transparent flex flex-col shrink-0 h-full justify-between w-[343px] mr-5 p-8 rounded-lg border-l-[16px] border-solid border-blue-900 md:w-[297px]"
             >
               <img
                 src="https://c.animaapp.com/mkh4hbwu1IS6us/assets/w=undefined,h=32.svg"
@@ -49,7 +49,7 @@ export const IndustryStats = () => {
             <div
               role="group"
               aria-label="2 / 5"
-              className="relative bg-[oklch(1_0_0)] box-border caret-transparent flex flex-col shrink-0 h-full justify-between w-[343px] mr-5 p-8 rounded-lg border-l-[16px] border-solid border-[oklch(0.3956_0.0812_166.85)] md:w-[297px]"
+              className="relative bg-gradient-to-br from-blue-950/85 to-black/95 box-border caret-transparent flex flex-col shrink-0 h-full justify-between w-[343px] mr-5 p-8 rounded-lg border-l-[16px] border-solid border-blue-900 md:w-[297px]"
             >
               <img
                 src="https://c.animaapp.com/mkh4hbwu1IS6us/assets/w=undefined,h=32-1.svg"
@@ -91,7 +91,7 @@ export const IndustryStats = () => {
             <div
               role="group"
               aria-label="3 / 5"
-              className="relative bg-[oklch(1_0_0)] box-border caret-transparent flex flex-col shrink-0 h-full justify-between w-[343px] mr-5 p-8 rounded-lg border-l-[16px] border-solid border-[oklch(0.3956_0.0812_166.85)] md:w-[297px]"
+              className="relative bg-gradient-to-br from-blue-950/85 to-black/95 box-border caret-transparent flex flex-col shrink-0 h-full justify-between w-[343px] mr-5 p-8 rounded-lg border-l-[16px] border-solid border-blue-900 md:w-[297px]"
             >
               <img
                 src="https://c.animaapp.com/mkh4hbwu1IS6us/assets/w=undefined,h=32-2.svg"
@@ -133,7 +133,7 @@ export const IndustryStats = () => {
             <div
               role="group"
               aria-label="4 / 5"
-              className="relative bg-[oklch(1_0_0)] box-border caret-transparent flex flex-col shrink-0 h-full justify-between w-[343px] mr-5 p-8 rounded-lg border-l-[16px] border-solid border-[oklch(0.3956_0.0812_166.85)] md:w-[297px]"
+              className="relative bg-gradient-to-br from-blue-950/85 to-black/95 box-border caret-transparent flex flex-col shrink-0 h-full justify-between w-[343px] mr-5 p-8 rounded-lg border-l-[16px] border-solid border-blue-900 md:w-[297px]"
             >
               <img
                 src="https://c.animaapp.com/mkh4hbwu1IS6us/assets/w=undefined,h=32-3.svg"
@@ -176,7 +176,7 @@ export const IndustryStats = () => {
             <div
               role="group"
               aria-label="5 / 5"
-              className="relative bg-[oklch(1_0_0)] box-border caret-transparent flex flex-col shrink-0 h-full justify-between w-[343px] mr-5 p-8 rounded-lg border-l-[16px] border-solid border-[oklch(0.3956_0.0812_166.85)] md:w-[297px]"
+              className="relative bg-gradient-to-br from-blue-950/85 to-black/95 box-border caret-transparent flex flex-col shrink-0 h-full justify-between w-[343px] mr-5 p-8 rounded-lg border-l-[16px] border-solid border-blue-900 md:w-[297px]"
             >
               <img
                 src="https://c.animaapp.com/mkh4hbwu1IS6us/assets/w=undefined,h=32-4.svg"

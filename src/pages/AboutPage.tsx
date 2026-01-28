@@ -4,7 +4,7 @@ export const AboutPage = () => {
   const { isDarkMode } = useDarkMode();
 
   return (
-    <div className={`min-h-screen relative overflow-hidden ${isDarkMode ? 'bg-gray-900' : 'bg-gradient-to-br from-blue-50 via-white to-purple-50'}`}>
+    <div className="min-h-screen relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full blur-3xl"></div>
@@ -16,7 +16,7 @@ export const AboutPage = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Animated heading */}
           <div className="mb-8 animate-fade-in-up">
-            <h1 className={`text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent leading-tight ${
+            <h1 className={`font-bold text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent leading-tight ${
               isDarkMode ? 'from-blue-400 to-purple-400' : ''
             }`}>
               Transforming Business Through AI Innovation
@@ -36,8 +36,8 @@ export const AboutPage = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-12 animate-fade-in-up animation-delay-400">
             <div className={`p-6 rounded-2xl backdrop-blur-sm border ${
               isDarkMode 
-                ? 'bg-gray-800/50 border-gray-700' 
-                : 'bg-white/70 border-gray-200'
+                ? 'bg-gradient-to-br from-blue-950/85 to-black/95 border-blue-950' 
+                : 'bg-gradient-to-br from-blue-900/75 to-blue-950/85 border-blue-900'
             } hover:shadow-xl transition-all duration-300 hover:scale-105`}>
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg mb-4 mx-auto flex items-center justify-center">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -54,8 +54,8 @@ export const AboutPage = () => {
 
             <div className={`p-6 rounded-2xl backdrop-blur-sm border ${
               isDarkMode 
-                ? 'bg-gray-800/50 border-gray-700' 
-                : 'bg-white/70 border-gray-200'
+                ? 'bg-gradient-to-br from-blue-950/85 to-black/95 border-blue-950' 
+                : 'bg-gradient-to-br from-blue-900/75 to-blue-950/85 border-blue-900'
             } hover:shadow-xl transition-all duration-300 hover:scale-105`}>
               <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg mb-4 mx-auto flex items-center justify-center">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -72,8 +72,8 @@ export const AboutPage = () => {
 
             <div className={`p-6 rounded-2xl backdrop-blur-sm border ${
               isDarkMode 
-                ? 'bg-gray-800/50 border-gray-700' 
-                : 'bg-white/70 border-gray-200'
+                ? 'bg-gradient-to-br from-blue-950/85 to-black/95 border-blue-950' 
+                : 'bg-gradient-to-br from-blue-900/75 to-blue-950/85 border-blue-900'
             } hover:shadow-xl transition-all duration-300 hover:scale-105`}>
               <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-orange-500 rounded-lg mb-4 mx-auto flex items-center justify-center">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -93,8 +93,8 @@ export const AboutPage = () => {
           <div className="mb-16 animate-fade-in-up animation-delay-800">
             <div className={`p-8 rounded-3xl backdrop-blur-md border ${
               isDarkMode 
-                ? 'bg-gradient-to-br from-gray-800/80 to-gray-900/80 border-gray-700' 
-                : 'bg-gradient-to-br from-white/90 to-blue-50/90 border-blue-200'
+                ? 'bg-gradient-to-br from-blue-950/90 to-black/98 border-blue-950 shadow-2xl' 
+                : 'bg-gradient-to-br from-blue-900/85 to-blue-950/95 border-blue-900 shadow-2xl'
             } shadow-2xl`}>
               <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8">
                 <h2 className={`text-8xl md:text-[12.72rem] font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>AI</h2>
@@ -127,7 +127,7 @@ export const AboutPage = () => {
 
           {/* How We Work Section */}
           <div className="py-16 px-4 sm:px-6 lg:px-8 animate-fade-in-up animation-delay-1400">
-            <h2 className={`text-5xl font-bold mb-12 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>How We Work</h2>
+            
             <div className="grid md:grid-cols-1 gap-12 items-center text-center">
               <div>
                 <div className="mb-8 pb-8 border-b border-gray-700">

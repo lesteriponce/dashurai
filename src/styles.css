@@ -18,12 +18,29 @@
   }
 }
 
+@keyframes rotating {
+  from {
+    transform: perspective(var(--perspective)) rotateX(var(--rotateX)) rotateY(0);
+  }
+  to {
+    transform: perspective(var(--perspective)) rotateX(var(--rotateX)) rotateY(1turn);
+  }
+}
+
 .animate-scroll-left {
   animation: scroll-left 30s linear infinite;
 }
 
 .animate-scroll-right {
   animation: scroll-right 30s linear infinite;
+}
+
+.animate-slide-left {
+  animation: scroll-left 20s linear infinite;
+}
+
+.animate-rotating {
+  animation: rotating 20s linear infinite;
 }
 
 /* Header scroll animation */
