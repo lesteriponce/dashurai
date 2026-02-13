@@ -105,7 +105,7 @@ export const CapabilitiesPage = () => {
           </div>
         </section>
         
-        {/* New Section with provided text */}
+        
         <section className="box-border caret-transparent mt-64 mb-16 text-center">
           <p className="text-5xl md:text-6xl font-bold box-border caret-transparent leading-tight max-w-4xl mx-auto text-[oklch(0.9821_0_0)]">
             We don't just use technologies.

@@ -11,6 +11,7 @@ import { CapabilitiesPage } from "./pages/CapabilitiesPage";
 import { DarkModeProvider } from "./contexts/DarkModeContext";
 import { useScrollToTop } from "./hooks/useScrollToTop";
 import { ChatbotAssistant } from "./components/ChatbotAssistant";
+import { PageTitle } from "./components/PageTitle";
 
 const ScrollToTopWrapper = ({ children }: { children: React.ReactNode }) => {
   useScrollToTop();
@@ -41,6 +42,7 @@ export const App = () => {
             </div>
 
             <div className="relative z-10">
+              <PageTitle />
               <AnnouncementBanner />
               <Header />
               <Routes>
