@@ -12,4 +12,25 @@ export default defineConfig({
     }),
     tailwindcss(),
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          router: ['react-router-dom'],
+          ui: ['@headlessui/react', '@heroicons/react'],
+        },
+      },
+    },
+    chunkSizeWarningLimit: 1000,
+    sourcemap: true,
+  },
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'react-router-dom'],
+  },
+  server: {
+    fs: {
+      allow: ['..'],
+    },
+  },
 })

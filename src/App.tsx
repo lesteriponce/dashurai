@@ -1,17 +1,20 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Suspense, lazy } from 'react';
 import { AnnouncementBanner } from "./components/AnnouncementBanner";
 import { Header } from "./pages/Header";
 import { Main } from "./components/Main";
 import { Footer } from "./pages/Footer";
-import { ContactPage } from "./pages/ContactPage";
-import { MarketsPage } from "./pages/MarketsPage";
-import { AboutPage } from "./pages/AboutPage";
-import { CareersPage } from "./pages/CareersPage";
-import { CapabilitiesPage } from "./pages/CapabilitiesPage";
 import { DarkModeProvider } from "./contexts/DarkModeContext";
 import { useScrollToTop } from "./hooks/useScrollToTop";
 import { ChatbotAssistant } from "./components/ChatbotAssistant";
 import { PageTitle } from "./components/PageTitle";
+
+// Lazy load pages for better performance
+const ContactPage = lazy(() => import("./pages/ContactPage").then(module => ({ default: module.ContactPage })));
+const MarketsPage = lazy(() => import("./pages/MarketsPage").then(module => ({ default: module.MarketsPage })));
+const AboutPage = lazy(() => import("./pages/AboutPage").then(module => ({ default: module.AboutPage })));
+const CareersPage = lazy(() => import("./pages/CareersPage").then(module => ({ default: module.CareersPage })));
+const CapabilitiesPage = lazy(() => import("./pages/CapabilitiesPage").then(module => ({ default: module.CapabilitiesPage })));
 
 const ScrollToTopWrapper = ({ children }: { children: React.ReactNode }) => {
   useScrollToTop();
@@ -47,11 +50,46 @@ export const App = () => {
               <Header />
               <Routes>
                 <Route path="/" element={<Main />} />
-                <Route path="/about" element={<AboutPage />} />
-                <Route path="/contact" element={<ContactPage />} />
-                <Route path="/markets" element={<MarketsPage />} />
-                <Route path="/careers" element={<CareersPage />} />
-                <Route path="/capabilities" element={<CapabilitiesPage />} />
+                <Route 
+                  path="/about" 
+                  element={
+                    <Suspense fallback={<div>Loading...</div>}>
+                      <AboutPage />
+                    </Suspense>
+                  } 
+                />
+                <Route 
+                  path="/contact" 
+                  element={
+                    <Suspense fallback={<div>Loading...</div>}>
+                      <ContactPage />
+                    </Suspense>
+                  } 
+                />
+                <Route 
+                  path="/markets" 
+                  element={
+                    <Suspense fallback={<div>Loading...</div>}>
+                      <MarketsPage />
+                    </Suspense>
+                  } 
+                />
+                <Route 
+                  path="/careers" 
+                  element={
+                    <Suspense fallback={<div>Loading...</div>}>
+                      <CareersPage />
+                    </Suspense>
+                  } 
+                />
+                <Route 
+                  path="/capabilities" 
+                  element={
+                    <Suspense fallback={<div>Loading...</div>}>
+                      <CapabilitiesPage />
+                    </Suspense>
+                  } 
+                />
               </Routes>
               <Footer />
             </div>
